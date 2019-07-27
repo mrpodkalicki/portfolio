@@ -1,26 +1,76 @@
-.main_header{
+body{
     font-family: sans-serif;
+    /* border:solid red; */
+}
+.main_header{
+    /* border:solid red; */
     display: flex;
     justify-content: center;
-    /* border:black solid; */
     width: 100%;
+}
+body header{
+    /* border:solid red; */
+    width: 100%;
+}
+.nav_info_about_me {
+    overflow: hidden;
+    margin: auto;
+    position: fixed;
+    z-index: 100;
+    /* left: 9.4vw; */
+    /* margin: 1.7vw 0 0.5vw 0 ;  */
+    padding: 0;
+    width: 98.9%;
+    height: 5%;
+    background-size: 100% 100%;
+    /* background-image: url(pictures/nav_picture.JPG); */
+     /* background-image: url(pictures/nav_bacground_img.JPG); */
+    /* border: solid white; */
+}
 
+ul {
+    list-style-type: none;
+    display: flex;
+}
 
+a {
+    text-decoration: none;
+}
+
+.nav_ul_info_about_me {
+    margin: 0;
+    padding: 0;
+}
+
+.nav_ul_info_about_me a:hover {
+    color: #df9f50;
+
+}
+
+.nav_ul_info_about_me a {
+    margin: 1%;
+    padding: 0;
+    width: 100%;
+    color: white;
+    font-size: 1.5vw;
+}
+
+.nav_ul_info_about_me a>li {
+    text-align: center;
 }
 .header_pict_back{
     position: relative;
     background-size:100% 100%;
-    background-repeat: no-repeat;
-    width:75%;
-    height: 22vw;
+    width:100%;
+    min-height:400px;
     background-image:url(pictures/header_picture.JPG);
 }
 .picture_think_out{
     position: absolute;
     top:30%;
     right:20%; 
-    width: 12vw;
-    height: 12vw;
+    width: 15vw;
+    height: 15vw;
     background-image:url(pictures/header_picture_two.JPG);
     background-size:100%,100%;
     background-repeat: no-repeat;
@@ -32,51 +82,129 @@
 .picture_think_out:hover {
     transform: rotate(360deg);
 }
-.nav_info_about_me{
-    list-style-type:none;
-    position: absolute;
-    left: 10.5vw;
-    top:5%;
-    width: 40vw;
-    color:black;
-    display: flex;
-    margin:2px;
-    /* border:solid white; */
-}
-
-
-.nav_info_about_me a:hover {
-    color: #df9f50;
-}
-.nav_info_about_me a{
-    /* border:solid red; */
-    text-decoration: none;
-    flex-grow: 1;
-    color:white;
-    /* margin: 2px; */
-    font-size: 1.5vw;
-}
 
 .self_intro{
     text-align: center;
-    margin:2px;
+    margin:1% 0 1% 0;
+    padding: 0;
     position: absolute;
-    /* border:solid red; */
-    left:21.5vw;
-    top:1.5vw;
+    left:29.5vw;
+    top:4vw;
+    box-sizing: border-box;
 }
 .self_intro>h1{
-    font-size:3.5vw;
+    margin: 0 0 9% 0;
+    font-size:5.5vw;
     color:#df9f50;
 }
 .self_intro>h2{
-    /* border:solid white; */
-    font-size: 1.8vw;
-    /* padding: 0; */
-    margin: 0;
-    /* margin:2px; */
+    font-size: 1.5vw;
+    margin: 0.5vw 0 0 0;
     font-weight: bolder;
 }
 .self_intro h2>span{
     color:#df9f50;
+}
+.nav_social_media{
+    margin:6% 0 0 0 ;
+    display: flex;
+    justify-content: center;
+}
+.nav_ul_social_media{
+    margin: 0;
+    width: 70%;
+    margin:0;
+    padding: 0;
+}
+.nav_ul_social_media a{
+    width: 100%;
+    margin: 0;
+    flex-grow: 1;
+}
+.nav_ul_social_media img{
+padding: 0;
+margin: 0;
+width: 2.5vw;
+transition: width 1s,
+height 1s,
+transform 1s;
+
+}
+.git_icon{
+    background-color: #df9f50;
+    border-radius: 90%;
+}
+.nav_ul_social_media img:hover{
+    transform: rotate(360deg);
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border:solid yellow; */
+}
+main > section{
+    width: 100%;
+    margin: auto;
+}
+main section header h1 {
+    color: #df9f50;
+    margin:2% 0 0 5%;
+}
+.what_i_can_do{
+    /* border: solid black; */
+    display: flex;
+    flex-direction: column;
+}
+.what_i_can_do header > h1{
+    text-align: center;
+    font-size: 25px;
+    color: black;
+}
+.what_i_can_do>article{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: solid black; */
+}
+.what_i_can_do article>a{
+    min-width: 200px;
+    margin: 1% 8% 1% 8%;
+}
+.what_i_can_do article a >div{
+    border:solid black;
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+    margin: 2% 8% 3% 8%;
+    border-radius:100px 200px;
+    background-image: url(pictures/button_bacground.JPG);
+    color: #df9f50;
+}
+.what_i_can_do article a >div:hover {
+    color: white;
+    border-radius:200px 100px;
+}
+
+#about_me{
+    background-color: #634f47;
+    padding: 10px;
+    color:white;
+}
+#about_me article{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction:  */
+}
+#about_me article > div{
+    text-align: center;
+    padding: 10px;
+    flex-grow: 1;
+    /* border-right: solid #df9f50; */
+}
+
+#about_me article div span{
+    color: #df9f50;
+
 }
