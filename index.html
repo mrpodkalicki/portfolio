@@ -10,40 +10,39 @@
 
 
 <body>
+     <nav class="nav_info_about_me">
+         <ul class="nav_ul_info_about_me">
+             <a href="#about_me">
+                 <li>About me</li>
+             </a>
+             <a href="#skills">
+                 <li>Skills</li>
+             </a>
+             <a href="#">
+                 <li>Portfolio</li>
+             </a>
+             <a href="#">
+                 <li>Contact</li>
+             </a>
+         </ul>
+     </nav>
     <header class="main_header">
-        <nav class="nav_info_about_me">
-            <ul class="nav_ul_info_about_me">
-                <a href="#About_me">
-                    <li>About me</li>
-                </a>
-                <a href="#skills">
-                    <li>Skills</li>
-                </a>
-                <a href="#">
-                    <li>Portfolio</li>
-                </a>
-                <a href="#">
-                    <li>Contact</li>
-                </a>
-            </ul>
-        </nav>
-        <div class="main_header">
-            <div class="header_pict_back">
-                <div class="picture_think_out"></div>
-                
-                <div class="self_intro">
-                    <h1>Welcome !!!</h1>
-                    <h2>My name is <span>Adrian</span> </h2>
-                    <h2>I am <span>Web Developer
-                    </span></h2>
-                    <nav class="nav_social_media">
-                        <ul class="nav_ul_social_media">
-                            <a href="#" ><li><img width="50px" src="https://img.icons8.com/color/96/000000/facebook.png"></li></a>
-                            <a href="#"><li class="git_icon_li" ><img  class="git_icon"  src="css/pictures/github-sign.png"></li></a>
-                            <a href="#"><li><img src="https://img.icons8.com/color/96/000000/linkedin.png"></li></a>
-                        </ul>
-                    </nav>
-                </div>
+       
+        
+        <div class="header_pict_back">
+            <div class="picture_think_out"></div>
+            <div class="self_intro">
+                <h1>Welcome !!!</h1>
+                <h2>My name is <span>Adrian</span> </h2>
+                <h2>I am <span>Web Developer
+                </span></h2>
+                <nav class="nav_social_media">
+                    <ul class="nav_ul_social_media">
+                        <a href="#" ><li><img width="50px" src="https://img.icons8.com/color/96/000000/facebook.png"></li></a>
+                        <a href="#"><li class="git_icon_li" ><img  class="git_icon"  src="css/pictures/github-sign.png"></li></a>
+                        <a href="#"><li><img src="https://img.icons8.com/color/96/000000/linkedin.png"></li></a>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
@@ -61,8 +60,6 @@
                       <div class="buttons_skills">
                    Skills
                  </div></a>
-                    
-               
             </article>
         </section>
         <section  id="about_me">
@@ -70,13 +67,21 @@
                 <h1>About me <menu></menu> </h1>
             </header>
             <article>
-                <div>
-                    <p>Full Name:<span> Adrian Podkalicki</span></p>
-                    <p>Age:<span> 24</span></p>
-                    <p>Telephone:<span> +48 885-237-197 </span></p>
-                    <p>email:<span> mrpodkalickiadrian@gmail.com</span></p>
-                </div> 
-                <div>
+                <div id="my_data">
+                    <div>
+                        <p>Full Name:</p>
+                        <p>Age:</p>
+                        <p>Telephone:</p>
+                        <p>email:</p>
+                    </div>
+                    <div id="personal_data">
+                         <p> Adrian Podkalicki</p>
+                         <p>24</p>
+                         <p> +48 885-237-197</p>
+                         <p>mrpodkalickiadrian@gmail.com</p>
+                    </div>
+                </div>
+                <div id="my_description">
                     <p>I am We Developer and I want to help you with your problem.<br>
                     I using technology like js, python, Django, WordPress.<br>
                     If I can help you, contact me. I think that together,<br>
@@ -90,11 +95,80 @@
                 <h1>Skills</h1>
             </header>
             <article>
+                 <ul class="technologies">
+                     <div>
+                        <a href="#">
+                            <li>
+                                <div class="back_end">
+                                    <div class="python_image">
+                                    </div>
+                                    <div class="c_image">
+                                        <img src="https://img.icons8.com/color/96/000000/c-programming.png">
+                                    </div>
+                                </div>
+                                <p>Back-End</p>
+                            </li>
+                     </div>
+                     <div>
+                        </a>
+                        <a href="#">
+                            <li>
+                                <div class="front_end">
+                                    <div class="html_image">
+                                    </div>
+                                    <div class="css_image">
+                                        
+                                    </div>
+                                    <div class="js_image">
+
+                                    </div>
+                                </div>
+                                <p>Front-End</p>
+                            </li>
+                        </a>
+                     </div>
+                     <div>
+                         <a href="#">
+                             <li>
+                                 <div class="framework">
+                                     <div class="django_image">
+                                     </div>
+                                     <div class="wordpress_image">
+                                     </div>
+                                 </div>
+                                 <p>Framework</p>
+                             </li>
+                         </a>
+                     </div>
+                 </ul>
                 
             </article>
 
         </section>
-       
+       <section id="portfolio">
+           <header>
+               <h1>Portfolio</h1>
+           </header>
+           <article>
+               <div>
+
+               </div>
+
+           </article>
+
+       </section>
+        <section id="contact">
+            <header>
+                <h1>Contact us</h1>
+            </header>
+            <article>
+                <div>
+
+                </div>
+
+            </article>
+
+        </section>
 
     </main>
     
