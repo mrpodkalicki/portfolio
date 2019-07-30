@@ -2,6 +2,7 @@ body{
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
+    
 }
 .main_header{
     display: flex;
@@ -15,7 +16,7 @@ body{
     top: 0;
     z-index: 100;
     background-size: 100% 100%;
-    background-color: #634f47;
+    background-color: black;
 }
 ul {
     list-style-type: none;
@@ -126,14 +127,15 @@ transform 1s;
 main{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 main > section{
-    width: 100%;
+    width: 75%;
     margin: 2% 0 
 }
 main section header h1 {
     color: #df9f50;
-    margin:3% 0 0 5%;
+    margin:5% 0 0 5%;
 }
 .what_i_can_do{
     display: flex;
@@ -174,9 +176,7 @@ main section header h1 {
 #about_me{
     background-color: #634f47;
     color:white;
-    width: 98%;
     box-shadow:10px 10px 10px #634f47;
-    border-radius:0px 100px 100px 0px;
 }
 #about_me header {
     padding: 0;
@@ -191,34 +191,37 @@ main section header h1 {
     /* border:red solid;  */
 }
 
-#about_me article div{
-    flex-grow: 1;
-}
 
-#my_description {
+
+#about_me article .my_description{
     padding: 1% 2%;
     color:white;
     word-wrap:break-word;
+    /* border:solid red; */
+    max-width:30%;
+    /* margin:0 0 0 15%; */
 }
-#my_data{
+#about_me article .my_data{
+    /* border:solid red; */
+    min-width:40%;
      display: flex;
      flex-direction: row;
      padding: 1% 2%;
 }
 
-#personal_data{
-    padding: 1% 2%;
+#about_me article .personal_data{
+    /* border:solid red; */
+    min-width:200px;
     color: #df9f50;
     margin: 0 0 0 20px;
     word-wrap:wrap break-word;
-    /* border:solid red; */
 }
 #skills{
     background-color: #634f47;
     box-shadow:1px 1px 100px #634f47;
     box-shadow:10px 10px 10px #634f47;
-    width: 98%;
-    border-radius:0px 100px 100px 0px;
+    /* width: 98%; */
+    /* border-radius:0px 100px 100px 0px; */
 }
 #skills article{
     margin: 1% 0;
@@ -288,4 +291,52 @@ main section header h1 {
     background-image: url(pictures/wordpress_logo.jpg);
     background-size: 60% 100%;
     background-repeat: no-repeat;
+}
+
+#portfolio article{
+    margin: 2%;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, 600px);
+    grid-gap: 15px;
+    grid-template-rows: auto;
+    align-items: stretch;
+
+}
+#portfolio article div > video{
+    max-width:100%;
+    min-height: 100%;
+}
+#portfolio article  .parent_title{
+    position:relative;
+    text-align: center;
+
+}
+#portfolio article   .container_on_title{
+    position:absolute;
+    z-index: 99;
+    color: white;
+    width: 100%;
+    height: 15%;
+    bottom:0;
+    background: rgba(0, 0, 0, 0.9);
+    filter: blur(2px); 
+}
+#portfolio article .parent_title > h1 {
+    position:absolute;
+    bottom:0; 
+    z-index: 99;
+    color:white;
+    text-align: center;
+    left: 25%;
+
+}
+
+
+#portfolio a .task{
+    
+    background-image: url(pictures/backgr_image_task.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
 }
