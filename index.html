@@ -6,98 +6,176 @@
     <meta name="keywords" content="Portfolio,Bussines Card,Adrian Podkalicki,skills,Web Developer"/>
     <meta http-equiv="X-UA-Compatible" content="IE-=edge,chrome=1" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/e69a2c4be2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Amaranth|Kanit|Ubuntu&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
-     <nav class="nav_info_about_me">
-         <ul class="nav_ul_info_about_me">
-             <a href="#about_me">
-                 <li>About me</li>
-             </a>
-             <a href="#skills">
-                 <li>Skills</li>
-             </a>
-             <a href="#portfolio">
-                 <li>Portfolio</li>
-             </a>
-             <a href="#">
-                 <li>Contact</li>
-             </a>
-         </ul>
-     </nav>
-    <header class="main_header">
-       
-        
-        <div class="header_pict_back">
-            <div class="picture_think_out"></div>
-            <div class="self_intro">
+    <nav class="main-navigation">
+        <ul class="main-navigation-ul">
+            <a href="#">
+                <li>About me</li>
+            </a>
+            <a href="#">
+                <li>Skills</li>
+            </a>
+            <a href="#">
+                <li>Portfolio</li>
+            </a>
+            <a href="#">
+                <li>Contact</li>
+            </a>
+        </ul>
+    </nav>
+    <header class="main-header">
+        <div class="header-back-image">
+            <div class="image-think-outside"></div>
+            <div class="self-intro">
                 <h1>Welcome !!!</h1>
                 <h2>My name is <span>Adrian</span> </h2>
                 <h2>I am <span>Web Developer
                 </span></h2>
-                <nav class="nav_social_media">
-                    <ul class="nav_ul_social_media">
-                        <a href="#" ><li><img width="50px" src="https://img.icons8.com/color/96/000000/facebook.png"></li></a>
-                        <a href="#"><li class="git_icon_li" ><img  class="git_icon"  src="css/pictures/github-sign.png"></li></a>
-                        <a href="#"><li><img src="https://img.icons8.com/color/96/000000/linkedin.png"></li></a>
+                <nav>
+                    <ul class="nav-social-media">
+                        <i class="social-media fab fa-facebook-square fa-2x">
+                            <div></div>
+                        </i>
+                        <i class="social-media fab fa-github-square fa-2x">
+                            <div></div>
+                        </i>
+                        <i class="social-media fab fa-linkedin fa-2x">
+                            <div></div>
+                        </i>
+                        
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
     <main>
-        <section class="what_i_can_do">
+        <section class=" section section-check-what-i-can">
             <header>
-                <h1>Check what I can do for you and contact with me.  </h1>
+                <p>Check what I can do for you and contact with me.</p>
             </header>
             <article>
-                 <a href="">
-                     <div class="buttons_contact">
-                   Contact
-                 </div></a>
-                  <a href="">
-                      <div class="buttons_skills">
-                   Skills
-                 </div></a>
+                <a href="#">
+                    <div class="button-contack-skills">
+                    Contact
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="button-contack-skills">
+                Skills</div>
+                </a>
             </article>
         </section>
-        <section  id="about_me">
-            <header >
-                <h1>About me <menu></menu> </h1>
+        <section  class=" section section-about-me">
+            <header class="section-header section-header-about-me">
+                <h3>About me</h3>
             </header>
-            <article>
-                <div class="my_data">
-                    <div>
-                        <p>Full Name:</p>
-                        <p>Age:</p>
-                        <p>Telephone:</p>
-                        <p>email:</p>
+            <article 
+            class="article-section-about-me">
+                <div class="box-info-about-me">
+                    <div class="box-elements-info-about-me my-picture">
                     </div>
-                    <div class="personal_data">
-                         <p> Adrian Podkalicki</p>
-                         <p>24</p>
-                         <p> +48 885-237-197</p>
-                         <p>mrpodkalickiadrian@gmail.com</p>
+                    <div class="box-elements-info-about-me personal-data">
+                        <div>
+                            <p>Full Name:</p>
+                            <p>Age:</p>
+                            <p>Telephone:</p>
+                            <p>email:</p>
+                        </div>
+                        <div class="my-personal-data">
+                            <p> Adrian Podkalicki</p>
+                            <p>24</p>
+                            <p> +48 885-237-197</p>
+                            <p>mrpodkalickiadrian@gmail.com</p>
+                        </div>
                     </div>
-                </div>
-                <div class="my_description">
-                    <p>I am We Developer and I want to help you with your problem.<br>
-                    I using technology like js, python, Django, WordPress.<br>
-                    If I can help you, contact me. I think that together,<br>
-                    we will solve your problems and we will create amazing applications.
-                    </p>
+                    <div class="box-elements-info-about-me my-description">
+                        <p>I'm web developer and i might help you with your problems.
+                            I'm using technologies like js,
+                            python, django and wordpress. Contact me if you need help. Together we will solve your
+                            problem we will build amazing application"
+                        </p>
+                    </div>
                 </div>
             </article>
         </section>
-        <section id="skills">
-            <header>
-                <h1>Skills</h1>
+        <section class="section section-skills">
+            <header class="section-header section-header-skills">
+                <h3>Skills</h3>
             </header>
-            <article>
-                 <ul class="technologies">
-                     <div>
-                        <a href="#">
+            <article class="article-section-skills">
+                <ul class="all-technologies-list">
+                    <a href="#" class="hiper-techno back-end-hiperlink">
+                        <li class="back-end-box">
+                            <ul class="languages-list">
+                                <li class="box-language python-language">
+                                    <p class="language-name">python</p>
+                                    <i
+                                        class=" language-icon fab fa-python fa-9x">
+                                    </i>
+                                </li>
+                                <li class="box-language c-language">
+                                    <p class="language-name">C</p><i
+                                        class="language-icon fab fa-cuttlefish fa-9x"></i>
+                                </li>
+                            </ul>
+                        </li>
+                        <p class="languages-inscription">Back-End</p>
+                    </a>
+                    <a href="#" class="hiper-techno front-end-hiperlink">
+                        <li class="front-end-box">
+                            <ul class="languages-list">
+                                <li class="box-language front-end-language-js">
+                                    <p class="language-name">java script</p><i
+                                        class="language-icon fab fa-js fa-9x"></i>
+                                </li>
+                                <li class="box-language front-end-language-html">
+                                    <p class="language-name">html</p><i class="language-icon fab fa-html5 fa-9x">
+                                        
+                                    </i>
+                                </li>
+                                <li class="box-language front-end-language-css">
+                                    <p class="language-name">css</p><i class="language-icon fab fa-css3-alt fa-9x"></i>
+                                </li>
+                            </ul>
+                        </li>
+                        <p class="languages-inscription">Front-End</p>
+                    </a>
+                    <a href="#" class="hiper-techno framework-hiperlink">
+                         <li class="framework-box">
+                             <ul class="languages-list">
+                                 <li class="box-language django-framework">
+                                     <p class="language-name">django</p>
+                                     <div class=" language-icon django-icon-box">
+                                         <div class="  django-icon">
+                                         </div>
+                                     </div>
+                                     
+                                 </li>
+                                 <li class="box-language wordpress-framework">
+                                     <p class="language-name">wordpress</p><i
+                                         class="language-icon fab fa-wordpress fa-9x"></i>
+                                 </li>
+                             </ul>
+                         </li>
+                         <p class="languages-inscription">Framework</p>
+
+                    </a >
+           
+
+                    
+
+
+
+
+
+
+                        <!-- <a href="#">
                             <li>
                                 <div class="back_end">
                                     <div class="python_image">
@@ -108,8 +186,8 @@
                                 </div>
                                 <p>Back-End</p>
                             </li>
-                     </div>
-                     <div>
+                        </div>
+                        <div>
                         </a>
                         <a href="#">
                             <li>
@@ -140,7 +218,7 @@
                              </li>
                          </a>
                      </div>
-                 </ul>
+                 </ul> -->
                 
             </article>
 

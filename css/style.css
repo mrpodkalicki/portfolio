@@ -1,60 +1,72 @@
-body{
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    
-}
-.main_header{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    flex-direction: column;
-}
 
-.nav_info_about_me {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-size: 100% 100%;
-    background-color: black;
+body{
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: 0;
+    box-sizing: border-box;
+    
 }
 ul {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
 }
+
 a {
     text-decoration: none;
 }
-.nav_ul_info_about_me {
+.main-navigation {
+    /* font-family: 'Ubuntu',sans-serif; */
+    /* font-family: 'Kanit',sans-serif; */
+    /* font-family: 'Amaranth',sans-serif; */
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.main-navigation-ul{
     margin: 0;
     padding: 0;
 }
-.nav_ul_info_about_me a:hover {
+.main-navigation-ul a:hover{
     color: #df9f50;
 }
-.nav_ul_info_about_me a {
-    /* margin: 1%; */
-    padding: 10px;
-    width: 100%;
+.main-navigation-ul a{
+    padding: 1%;
+    /* width: 100%; */
+    flex-grow: 1;
     color: white;
     font-size: 18px;
+    margin:0 1% 0 1%;
 }
-.nav_ul_info_about_me a>li {
+.main-navigation-ul a>li{
     text-align: center;
 }
-.header_pict_back{
+.main-header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+.header-back-image{
     position: relative;
-    background-size:100% 100%;
+    background-size:100%;
     width:100%;
     min-height:400px;
-    background-image:url(pictures/header_picture.JPG);
+    background-image:url(pictures/geader_picture_twoo.JPG);
+    background-repeat: no-repeat;
 }
-.picture_think_out{
+.image-think-outside{
     position: absolute;
-    top:30%;
-    right:20%; 
-    width: 15vw;
-    height: 15vw;
+    top:20%;
+    right:4%; 
+    width: 18vw;
+    height: 18vw;
     background-image:url(pictures/header_picture_two.JPG);
     background-size:100%,100%;
     background-repeat: no-repeat;
@@ -63,235 +75,218 @@ a {
     height 2s,
     transform 2s;
 }
-.picture_think_out:hover {
-    transform: rotate(360deg);
-}
-
-.self_intro{
+.self-intro{
     text-align: center;
-    margin:1% 0 1% 0;
+    /* margin:1% 0 1% 0; */
     padding: 0;
     position: absolute;
-    left:25.5%;
+    left:14.5vw;
     top:4vw;
     box-sizing: border-box;
+    color:white;
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: 2px;
 }
-.self_intro>h1{
-    margin: 0 0 9% 0;
+.self-intro>h1 {
+    margin: 0 0 1vh 0;
     font-size:70px;
     color:#df9f50;
 }
-.self_intro>h2{
+.self-intro>h2{
     font-size: 30px;
     margin: 0.5vw 0 0 0;
     font-weight: bolder;
 }
-.self_intro h2>span{
+.self-intro h2>span{
     color:#df9f50;
 }
-.nav_social_media{
-    margin:6% 0 0 0 ;
-    display: flex;
-    justify-content: center;
+
+.nav-social-media{
+    position: absolute;
+    left:18%;
+    width: 55%;
+    margin:2vw;
+    padding: 1%;
 }
-.nav_ul_social_media{
+.fab{
+    position: relative;
+    color:white;
     margin: 0;
-    width: 70%;
-    margin:0;
     padding: 0;
-}
-.nav_ul_social_media a{
-    width: 100%;
-    margin: 0;
     flex-grow: 1;
+    z-index:1;
+    transition: width 1s,
+    height 1s,
+    transform 1s;
 }
-.nav_ul_social_media img{
-padding: 0;
-margin: 0;
-width: 43%;
-transition: width 1s,
-height 1s,
-transform 1s;
+.social-media div {
+    position: absolute;
+    background-color: black;
+    border-radius: 100px 100px;
+    width: 35%;
+    height: 85%;
+    top:8%;
+    left:32%;
+    z-index: -1;
 }
-.git_icon{
-    background-color: #df9f50;
-    border-radius: 90%;
-}
-.nav_ul_social_media img:hover{
+.social-media:hover {
     transform: rotate(360deg);
 }
-
-.nav_ul_social_media .git_icon:hover {
+.fa-facebook-square:hover {
     transform: rotate(-360deg);
 }
 main{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    letter-spacing: 1px;
 }
-main > section{
-    width: 75%;
-    margin: 2% 0 
+.section{
+    margin:0 0 3vw 0
 }
-main section header h1 {
-    color: #df9f50;
-    margin:5% 0 0 5%;
-}
-.what_i_can_do{
+.section-check-what-i-can {
     display: flex;
     flex-direction: column;
 }
-.what_i_can_do header > h1{
+.section-check-what-i-can header>p {
     text-align: center;
     padding: 0;
-    margin: 2%;
     font-size: 25px;
     color: black;
 }
-.what_i_can_do>article{
-    width: 100%;
+.section-check-what-i-can>article {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-.what_i_can_do article>a{
-    min-width: 200px;
-    margin: 1% 8% 1% 8%;
-}
-.what_i_can_do article a >div{
-    border:solid black;
-    display: flex;
-    justify-content: center;
-    padding: 7px;
-    margin: 2% 8% 3% 8%;
-    border-radius:100px 200px;
-    background-image: url(pictures/button_bacground.JPG);
-    color: #df9f50;
-}
-.what_i_can_do article a >div:hover {
-    color: white;
-    border-radius:200px 100px;
-}
-
-#about_me{
-    background-color: #634f47;
-    color:white;
-    box-shadow:10px 10px 10px #634f47;
-}
-#about_me header {
-    padding: 0;
-    margin: 0;
-    color: wheat;
-}
-#about_me article{
-    padding: 0;
-    margin: 0 0 0 8%;
-    display: flex;
-    flex-wrap: wrap;
-    /* border:red solid;  */
-}
-
-
-
-#about_me article .my_description{
-    padding: 1% 2%;
-    color:white;
-    word-wrap:break-word;
-    /* border:solid red; */
-    max-width:30%;
-    /* margin:0 0 0 15%; */
-}
-#about_me article .my_data{
-    /* border:solid red; */
-    min-width:40%;
-     display: flex;
-     flex-direction: row;
-     padding: 1% 2%;
-}
-
-#about_me article .personal_data{
-    /* border:solid red; */
-    min-width:200px;
-    color: #df9f50;
-    margin: 0 0 0 20px;
-    word-wrap:wrap break-word;
-}
-#skills{
-    background-color: #634f47;
-    box-shadow:1px 1px 100px #634f47;
-    box-shadow:10px 10px 10px #634f47;
-    /* width: 98%; */
-    /* border-radius:0px 100px 100px 0px; */
-}
-#skills article{
-    margin: 1% 0;
-}
-#skills .technologies{
-    padding: 0.5% 2%;
-    display: flex;
-    flex-wrap: wrap;
-}
-#skills .technologies > div{
-    flex-grow: 1;
-    text-align: center;
-    font-size: 20px;
-    background-color: white;
-    /* border:solid #df9f50; */
-    box-shadow:5px 5px 10px white;
-    /* box-shadow:1px 1px 100px #634f47; */
-    margin: 2%;
-    padding: 2% 2% 0 2%;
     
 }
-#skills .technologies>div:hover{
-    background-color: #df9f50;
-}
-
-#skills .technologies a li >div{
-    display: flex;
-    flex-wrap: wrap; 
-}
-
-#skills .technologies a li div> div
-{
-    flex-grow: 1;
+.button-contack-skills{
+    color:black;
     min-width: 150px;
-    min-height: 100px;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    border-radius:10px;
+    background-color: #df9f50;
+    margin: 0 5vw 0vw 5vw;
 }
-#skills .technologies a li  p{
+.button-contack-skills:hover {
+    color: white;
+    background-color: rgba(0,0,0,0.1)
+}
+.section-about-me{
+    background-color: #323232;
+    color:white;
+}
+.section-header >h3 {
+    font-size: 25px;
+    padding: 1vw 0 0 0;
+    color: #df9f50;
+    margin:0 0 0 4vw;
+}
+.article-section-about-me {
+    padding: 1%;
+    margin: 0;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+.box-info-about-me{
+    display: flex;
+    flex-wrap: wrap;
+    /* border:solid red; */
+    justify-content: center;
+    width: 85%;
+    margin: 0 0 1vw 2vw;
+}
+.box-elements-info-about-me{
+    margin:0 2.5vh 0 2.5vh;
+    padding: 0;
+}
+.my-picture {
+    background-image: url(pictures/my_picture.jpg);
+    min-width: 160px;
+    min-height: 150px;
+    max-height: 160px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    margin:0.5vw 2vw 0 0;
+}
+.personal-data {
+    display: flex;
+}
+.my-personal-data {
+    color: #df9f50;
+    word-wrap:wrap break-word;
+}
+.my-description{
+    word-wrap:break-word;
+    max-width: 35vw;
+    line-height: 2;
+    text-align: justify;
+}
+.section-header-skills >h3 {
+    color:black;
+}
+.all-technologies-list{
+    /* border:solid black; */
+    display: flex;
+    margin:2%;
+}
+.hiper-techno {
+     box-shadow:10px 10px 10px 10px  #634f47;
+     background-color:#df9f50;
+     padding: 1%;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     flex-grow:1;
+     margin: 1vw; 
+}
+.languages-inscription{
     color: black;
-    /* border: solid red; */
+    font-size: 30px;
+    margin: 1%;
 }
-#skills .technologies .python_image{
-     background-image: url(pictures/python_logo.svg);
-     background-size: 100% 100%;
+.languages-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
 }
-#skills .technologies .js_image{
-    background-image: url(pictures/js_logo.svg);
-    background-size: 100% 100%;
+.language-icon{
+    color:#092e20;
+    margin: 5px 25px 0 25px;
+}
+.hiper-techno:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: white;
+}
+.language-name{
+    color: black;
+    margin: 0;
 }
 
-#skills .technologies .html_image {
-    background-image: url(pictures/html_logo.png);
-    background-size: 60% 100%;
-    background-repeat: no-repeat;
+.django-icon-box{
+    border:solid #092e20;
+    background-color: #092e20;
+    min-height: 130px;
 }
-
-#skills .technologies .css_image {
-    background-image: url(pictures/css_logo.png);
-    background-size: 50% 100%;
-    background-repeat: no-repeat;
-}
-#skills .technologies .django_image {
+.django-icon{
     background-image: url(pictures/django_logo.svg);
-    background-size: 60% 100%;
+    width: 120px;
+    min-height: 50px;
+    background-size:100%;
     background-repeat: no-repeat;
+    background-color: #092e20;
+    /* border: solid red; */
+    /* padding: 100px; */
+    box-sizing: border-box;
+    margin:30% 0 0 0;
 }
-#skills .technologies .wordpress_image {
-    background-image: url(pictures/wordpress_logo.jpg);
-    background-size: 60% 100%;
-    background-repeat: no-repeat;
-}
+
 
 #portfolio article{
     margin: 2%;
