@@ -14,18 +14,18 @@
 
 <body>
     <nav class="main-navigation">
-        <ul class="main-navigation-ul">
-            <a href="#">
-                <li>About me</li>
+        <ul class="main-navigation-list">
+            <a class="main-navigation-hiperlink" href="#">
+                <li class="main-navigation-element">About me</li>
             </a>
-            <a href="#">
-                <li>Skills</li>
+            <a class="main-navigation-hiperlink" href="#">
+                <li class="main-navigation-element">Skills</li>
             </a>
-            <li href="#">
-                <li>Portfolio</li>
-            </a
-            <a href="#">
-                <li>Contact</li>
+            <a class="main-navigation-hiperlink" href="#">
+                <li class="main-navigation-element">Portfolio</li>
+            </a>
+            <a class="main-navigation-hiperlink" href="#">
+                <li class="main-navigation-element">Contact</li>
             </a>
         </ul>
     </nav>
@@ -33,20 +33,19 @@
         <div class="header-back-image">
             <div class="image-think-outside"></div>
             <div class="self-intro">
-                <h1>Welcome !!!</h1>
-                <h2>My name is <span>Adrian</span> </h2>
-                <h2>I am <span>Web Developer
+                <h1 class="first-header">Welcome !!!</h1>
+                <h2 class="second-header">My name is <span class="second-header-span">Adrian</span
+                        class="second-header-span">
+                </h2>
+                <h2 class="second-header">I am <span class="second-header-span">Web Developer
                 </span></h2>
                 <nav>
-                    <ul class="nav-social-media">
+                    <ul class="social-media-lists">
                         <i class="social-media fab fa-facebook-square fa-2x">
-                            <div></div>
                         </i>
                         <i class="social-media fab fa-github-square fa-2x">
-                            <div></div>
                         </i>
-                        <i class="social-media fab fa-linkedin fa-2x">
-                            <div></div>
+                        <i class="social-media fab fa-linkedin fa-2x">  
                         </i>
                         
                     </ul>
@@ -56,10 +55,11 @@
     </header>
     <main>
         <section class=" section section-check-what-i-can">
-            <header>
-                <p>Check what I can do for you and contact with me.</p>
+            <header class="section-header  section-header-check-what-i-can">
+                <h3 class=" third-header what-i-can-section-header_third">Check what I can do for you and contact with
+                    me.</h3>
             </header>
-            <article>
+            <article class="what-i-can-article-section">
                 <a href="#">
                     <div class="button-contack-skills">
                     Contact
@@ -73,7 +73,7 @@
         </section>
         <section  class=" section section-about-me">
             <header class="section-header section-header-about-me">
-                <h3>About me</h3>
+                <h3 class="third-header about-me-section-header-third">About me</h3>
             </header>
             <article 
             class="article-section-about-me">
@@ -106,7 +106,7 @@
         </section>
         <section class="section section-skills">
             <header class="section-header section-header-skills">
-                <h3>Skills</h3>
+                <h3 class="third-header skills-section-header-third">Skills</h3>
             </header>
             <article class="article-section-skills">
                 <ul class="all-technologies-list">
@@ -167,91 +167,58 @@
             </article>
         </section>
         <section class="section section-portfolio">
-            <header class="section-header section-header-skills">
-                <h3>Portfolio</h3>
+            <header class="section-header section-header-portfolio">
+                <h3 class="third-header portfolio-section-header-third">Portfolio</h3>
             </header>
-            <article class="article-section-skills">
+            <article class="article-section-portfolio">
                 <ul class="portfolio-list">
-                    <a href="#" class="-musisc-system-hiperlink">
-                        <li class="music-system-video-box">
+                    <a href="#" class="section-portfolio-hiperlink musisc-system-hiperlink">
+                        <li class="portfolio-list-elemnt music-system-video-box">
                             <video autoplay muted loop class="portfolio-section-video music-system-video">
-                                <source src="/css/movies/music.mp4" type="video/mp4">
+                                <source src="css/movies/music.mp4" type="video/mp4">
                              </video>
+                             <div class="blur-bar-on-video"></div>
+                             <div class="video-header-box">
+                                <h4 class="portfolio-section-video-header">Music Recommendation System</h4></div>
                         </li>
-                        <h3>Music Recommendation System</h3>
                     </a>
-                    <a class="transport-order-system-hiperlink">
-                        <li class="transport-order-system-video-box">
+                    <a href="#" class="section-portfolio-hiperlink transport-order-system-hiperlink">
+                        <li class="portfolio-list-elemnt transport-order-system-video-box">
                             <video autoplay muted loop class="portfolio-section-video transport-order-system-video">
-                                <source src="/css/movies/truck.mp4" type="video/mp4">
-                            </video> 
+                                <source src="css/movies/truck.mp4" type="video/mp4">
+                            </video>
+                            <div class="blur-bar-on-video"></div>
+                            <div class="video-header-box">
+                                <h4 class="portfolio-section-video-header">Application Supporting Transport Orders</h4>
+                            </div>
                         </li>
-                        <h3>Application supporting transport orders</h3>
                     </a>
-                    <a href="#" class="numerical-method-hiperlink">
-                        <li class="numerical-method-video-box">
+                    <a href="#" class="section-portfolio-hiperlink numerical-method-hiperlink">
+                        <li class="portfolio-list-elemnt numerical-method-video-box">
                             <video autoplay muted loop class="portfolio-section-video numerical-methon-video">
-                                <source src="/css/movies/calculations.mp4" type="video/mp4">
-                            </video>  
+                                <source src="css/movies/calculations.mp4" type="video/mp4">
+                            </video> 
+                            <div class="blur-bar-on-video"></div>
+                            <div class="video-header-box">
+                                <h4 class="portfolio-section-video-header">Calculations Using Numerical Methods</h4>
+                            </div>
                         </li>
-                        <h3>Calculations Using Numerical Methods</h3>
                     </a>
-                    <a class="scheduling-alghoritm-hiperlink">
-                        <li class="scheduling-alghoritm-image-box">
+                    <a href="" class="section-portfolio-hiperlink scheduling-alghoritm-hiperlink">
+                        <li class="portfolio-list-elemnt portfolio-section-video scheduling-alghoritm-image-box">
+                             <video autoplay muted loop class="portfolio-section-video numerical-methon-video">
+                                 <source src="#" type="video/mp4">
+                             </video>
+                            <div class="blur-bar-on-video"></div>
+                            <div class="video-header-box">
+                                 <h4 class="portfolio-section-video-header">A Task Scheduling Algorithm</h4>
 
+                            </div>
+                               
                         </li>
-                        <h3>A Task Scheduling Algorithm</h3>
+                       
                     </a>
                 </ul>
-
-
-                <a href="#">
-                    <div class="parent_title music">
-                        <div class="container_on_title">
-                            
-                        </div>
-                        <h1>Music Recommendation System</h1>
-                            
-                       
-                    </div>
-                </a>
-                
-                <a href="#">
-                    
-                    <div class="parent_title calculations">
-                            <div class="container_on_title">
-                            </div>
-                            <h1>Calculations Using Numerical Methods</h1>
-                    <video autoplay muted loop class="my_calculations">
-                        <source src="/css/movies/calculations.mp4" type="video/mp4">
-                    </video>
-                </div>
-
-                </a>
-                <a href="#">
-                        <div class="parent_title truck">
-                                <div class="container_on_title">
-                                    </div> 
-                                    <h1>Application supporting transport orders</h1>
-                            <video autoplay muted loop class="my_truck">
-                                <source src="/css/movies/truck.mp4" type="video/mp4">
-                            </video> 
-                        </div>
-                      </a>
-              <a href="#">
-                
-                <div class="parent_title task">
-                        <div class="container_on_title">
-                               
-                            </div>
-                            <h1> A Task Scheduling Algorithm</h1>
-                </div>
-              </a>
-             
-               
-
-           
-
             </article>
 
         </section>
