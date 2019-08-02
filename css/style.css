@@ -1,11 +1,23 @@
 
+
 body{
     font-family: 'Ubuntu', sans-serif;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     margin: 0;
     box-sizing: border-box;
+}
+@media screen and (min-width:1300px){
+    .main-box{
+        width: 80%; 
+    }
+    .think-outside-image{
+        max-width:13vw;
+        max-height: 11vw;
+        /* border: #092e20 solid; */
+
+    }
 }
 ul {
     list-style-type: none;
@@ -19,7 +31,6 @@ a {
     /* font-family: 'Ubuntu',sans-serif; */
     /* font-family: 'Kanit',sans-serif; */
     /* font-family: 'Amaranth',sans-serif; */
-    /* width: 100%; */
     position: sticky;
     top: 0;
     z-index: 5;
@@ -62,7 +73,7 @@ a {
     background-image:url(pictures/geader_picture_twoo.JPG);
     background-repeat: no-repeat;
 }
-.image-think-outside{
+.think-outside-image{
     position: absolute;
     top:20%;
     right:4%; 
@@ -136,6 +147,13 @@ main{
     margin:0 0 1vw 0;
     /* border:yellow solid; */
 }
+
+.third-header{
+    font-size: 25px;
+    padding: 1vw 0 0 0;
+    color: #df9f50;
+    margin:0 0 0 4vw;
+}
 .section-check-what-i-can {
     display: flex;
     flex-direction: column;
@@ -148,10 +166,11 @@ main{
     
 }
 
-.what-i-can-section-header_three{
+.what-i-can-section-header_third{
     font-size: 25px;
     color: black;
     text-align: center;
+    margin:0 0 1.5vh 0;
 
 }
 .section-header-check-what-i-can{
@@ -185,12 +204,7 @@ main{
     background-color: #323232;
     color:white;
 }
-.third-header{
-    font-size: 25px;
-    padding: 1vw 0 0 0;
-    color: #df9f50;
-    margin:0 0 0 4vw;
-}
+
 .article-section-about-me {
     padding: 1%;
     margin: 0;
@@ -201,13 +215,12 @@ main{
 .box-info-about-me{
     display: flex;
     flex-wrap: wrap;
-    /* border:solid red; */
     justify-content: center;
-    width: 85%;
+    /* width: 85%; */
     margin: 0 0 1vw 2vw;
 }
 .box-elements-info-about-me{
-    margin:0 2.5vh 0 2.5vh;
+    margin:0 3.5vh 0 3.5vh;
     padding: 0;
 }
 .my-picture {
@@ -229,8 +242,8 @@ main{
 }
 .my-description{
     word-wrap:break-word;
-    max-width: 35vw;
-    line-height: 2;
+    max-width: 25vw;
+    line-height: 1.6;
     text-align: justify;
 }
 .skills-section-header-third {
@@ -299,9 +312,10 @@ main{
 .portfolio-list{
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, 480px);
+    grid-template-columns:repeat(auto-fill, 480px) ;
      /* grid-template-rows: 300px 300px; */
      justify-content: center;
+     border: solid white;
 }
 .portfolio-section-video{
     max-width:100%;
@@ -314,7 +328,7 @@ main{
 .blur-bar-on-video{
     position:absolute;
     z-index: 0;
-    color: red;
+    /* color: red; */
     width: 100%;
     height: 15%;
     bottom:0;
