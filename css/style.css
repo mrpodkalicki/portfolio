@@ -1,4 +1,4 @@
-
+ 
 
 body{
     font-family: 'Ubuntu', sans-serif;
@@ -8,16 +8,21 @@ body{
     margin: 0;
     box-sizing: border-box;
 }
-@media screen and (min-width:1300px){
+@media screen and (min-width:1550px){
     .main-box{
-        width: 80%; 
+        max-width: 80%; 
     }
     .think-outside-image{
         max-width:13vw;
         max-height: 11vw;
-        /* border: #092e20 solid; */
+        border: #092e20 solid;
 
     }
+}
+.main-box{
+    width: 100%;
+    /* margin: 0; */
+    /* border: #092e20 solid; */
 }
 ul {
     list-style-type: none;
@@ -203,6 +208,7 @@ main{
 .section-about-me{
     background-color: #323232;
     color:white;
+    
 }
 
 .article-section-about-me {
@@ -322,7 +328,15 @@ main{
 }
 .section-portfolio-hiperlink{
     position:relative;
+    transition: width 1s,
+    height 1s,
+    transform 1s;
     /* border: solid red; */
+
+}
+.section-portfolio-hiperlink:hover{
+    transform: rotateY(180deg);
+    background-color: #323232;
 
 }
 .blur-bar-on-video{
@@ -362,5 +376,71 @@ main{
     min-height: 300px;
     width: 100%;
     margin:0;
-
 } 
+.section-contact{
+    background-color: #323232;
+}
+.box-on-input{
+    display: flex;
+width: 100%;
+}
+.message-form{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    margin: 0 0 0 5vw;
+    padding: 2%;
+    border-radius: 5px;
+    width: 40%;
+}
+.fourth-header-contact-section{
+    margin:0 0 1% 0;
+    font-size: 20px;
+    color:white;
+    text-shadow: 2px 2px 3px black;
+    letter-spacing: 2px
+}
+.label-contact-section{
+    margin:  0 0 2vh 0;
+    
+}
+.input-contact-section{
+    background-color: #df9f50;
+    border-radius: 8px;
+    width: 50%;
+    margin: 0.3% 0 0 0;
+    height: 35px;
+    box-shadow:10px 10px 10px 1px black;
+    
+    
+}
+.message-box-textarea{
+    height: 200px;
+    /* background-color: black; */
+    color: white;
+    width: 100%;
+}
+.submit-button{
+    background-color: white;
+    min-width: 13%;
+    max-width: 15%;
+    color: black;
+    align-self:flex-end;
+}
+.submit-button:hover{
+    background-color: black;
+    color:white;
+
+}
+input[type="text"] {
+    font-size: 20px;
+    padding:0 2% 0 2%;
+    color: black;
+}
+textarea[type="text"]{
+    font-size: 20px;
+    color:black;
+    padding:2%;
+    font-family: 'Ubuntu',
+    sans-serif;
+}
