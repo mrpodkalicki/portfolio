@@ -33,6 +33,7 @@
     --font-size-inside-textarea:20px;
     --padding-inside-textarea:0 0 0.5% 1%;
     --font-size-submit-button:18px;
+    --font-size-footer:10px;
  
 
  }
@@ -168,7 +169,7 @@
     letter-spacing: 1px;
 }
 .section{
-    margin:0 0 1vw 0;
+    margin:1% 0 0 0;
 }
 
 .third-header{
@@ -428,6 +429,7 @@
 } 
 .section-contact{
     background-color: #323232;
+    margin:
 }
 .box-on-input{
     display: flex;
@@ -520,9 +522,17 @@ textarea[type="text"]{
   ::-ms-input-placeholder { /* Microsoft Edge */
     color: black;
   }
+  .footer{
+      background-color:#111111;
+      margin: 0;
+      color: white;
+      text-align: center;
+      font-size: var(--font-size-footer);
+      padding: 1%;
+  }
  
 
-  @media only screen and (max-width:1000px) and (min-width: 600px) {
+  @media only screen and (max-width:1000px)  {
    :root{
         --min-height-header-back-image:510px;
         --font-size-first-header:100px;
@@ -554,6 +564,7 @@ textarea[type="text"]{
         --padding-inside-textarea:1% 1% 1% 2%;
         --font-size-submit-button:45px;
         --min-width-submit-button:30%;
+        --font-size-footer:20px;
    } 
  
    .section{
@@ -648,8 +659,8 @@ textarea[type="text"]{
    .submit-button {
        border-radius: 18px;
        height: 90px;
-  
 }
+  }
 
 
 
@@ -663,7 +674,7 @@ textarea[type="text"]{
 
 
 
-/* @media screen and  (max-width:1440px) and (min-width:1024px){
+ /* @media screen and  (max-width:1440px) and (min-width:1024px){
     :root{
         --width-message-form:50%;
         --max-width-hiperlink-technogies:40%;
@@ -672,8 +683,8 @@ textarea[type="text"]{
     .all-technologies-list{
         justify-content: center;
     }  
-}
-@media screen and (max-width:1024px) and (min-width:768px){
+} */
+/* @media screen and (min-width:1024px) {
    :root{
     --min-width-box-elements-info-about-me:35%;
     --margin-box-elements-info-about-me:3%;
@@ -703,6 +714,5 @@ textarea[type="text"]{
         max-width:50%;
         border:solid red;
      }    
-} */
-
+}  */
 
