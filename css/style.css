@@ -1,16 +1,43 @@
- :root{
+:root{
     --main-width:100%;
+    --min-height-header-back-image:400px;
     --min-width-box-elements-info-about-me:22%;
+    --width-header-back-image:100%;
+    --font-size-first-header:70px;
+    --font-size-second-header:30px;
+    --font-size-third-header:25px;
+    --font-size-what-i-can-section-header_third:25px;
+    --width-elements-section-check-what-i-can:55%;
+    --min-width-button-contack-skills:150px;
+    --padding-button-contack-skills:2%;
+    --font-size-button-contack-skills:18px;
+    --min-height-my-picture-box:40%;
     --margin-box-elements-info-about-me:0 3% 0 3%;
+    --max-width-my-description:35%;
+    --font-size-my-personal-data:18px;
+    --font-size-personal-data:22px;
+    --font-size-my-description-p:19px;
+    --font-size-language-name:20px;
+    --font-size-language-inscription:30px;
     --width-grid-template-columns:repeat(auto-fill, 480px);
-    --width-input-contact-section:50%;
-    --width-message-form:40%;
+    --width-input-contact-section:40%;
+    --height-blur-bar-on-video:15%;
+    --font-size-portfolio-section-video-header:15px;
+    --width-message-form:50%;
     --min-width-submit-button:20%;
-    --max-width-hiperlink-technogies:33%;
+    --max-width-my-picture-box:150px;
+    --font-size-fourth-header-contact-section:20px;
+    --height-input-contact-section:35px;
+    --height-message-box-textarea:200px;
+    --font-size-inside-input:20px;
+    --font-size-inside-textarea:20px;
+    --padding-inside-textarea:0 0 0.5% 1%;
+    --font-size-submit-button:18px;
+ 
 
  }
 
-body{
+.body{
     font-family: 'Ubuntu', sans-serif;
     display: flex;
     flex-direction: column;
@@ -18,7 +45,6 @@ body{
     margin: 0;
     box-sizing: border-box;
 }
-
 .main-box{
     width: var(--main-width);
 }
@@ -63,13 +89,12 @@ body{
     width: 100%;
     flex-direction: column;
     margin: 0;
-
 }
 .header-back-image{
     position: relative;
     background-size:100%;
-    width:100%;
-    min-height:400px;
+    width:var(--width-header-back-image);
+    min-height:var(--min-height-header-back-image);
     background-image:url(pictures/geader_picture_twoo.JPG);
     background-repeat: no-repeat;
 }
@@ -100,11 +125,11 @@ body{
 }
 .first-header{
     margin: 0 0 1vh 0;
-    font-size:70px;
+    font-size:var(--font-size-first-header);
     color:#df9f50;
 }
 .second-header{
-    font-size: 30px;
+    font-size: var(--font-size-second-header);
     margin: 0.5vw 0 0 0;
     font-weight: bolder;
 }
@@ -137,7 +162,7 @@ body{
 .fa-facebook-square:hover {
     transform: rotate(-360deg);
 }
-main{
+.main{
     display: flex;
     flex-direction: column;
     letter-spacing: 1px;
@@ -147,7 +172,7 @@ main{
 }
 
 .third-header{
-    font-size: 25px;
+    font-size:var(--font-size-third-header);
     padding: 1vw 0 0 0;
     color: #df9f50;
     margin:0 0 0 4vw;
@@ -155,13 +180,12 @@ main{
 .section-check-what-i-can {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     flex-wrap: wrap;
     align-content: center;
     padding: 0;
 }
 .what-i-can-section-header_third{
-    font-size: 25px;
+    font-size:var(--font-size-what-i-can-section-header_third);
     color: black;
     text-align: center;
     margin:0 0 1.5vh 0;
@@ -169,18 +193,19 @@ main{
 .section-header-check-what-i-can{
     margin: 0;
     margin: 0;
-    max-width:55%;
+    max-width:var(--width-elements-section-check-what-i-can);
 }
 .what-i-can-article-section{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    max-width:55%;
+    max-width:var(--width-elements-section-check-what-i-can);
 }
 .button-contack-skills{
+    font-size: var(--font-size-button-contack-skills);
     color:black;
-    min-width: 150px;
-    padding: 2%;
+    min-width: var(--min-width-button-contack-skills);
+    padding: var(--padding-button-contack-skills);
     display: flex;
     justify-content: center;
     border-radius:10px;
@@ -189,7 +214,7 @@ main{
 }
 .button-contack-skills:hover {
     color: white;
-    background-color: black;
+    background-color: #323232;
 }
 .section-about-me{
     background-color: #323232;
@@ -223,10 +248,8 @@ main{
 
 .my-picture-box{
     position: relative;
-    /* border:solid red; */
-    min-height: 40%;
-    max-width: 150px;
-    /* justify-content:center; */
+    min-height: var(--min-height-my-picture-box);
+    max-width: var(--max-width-my-picture-box);
 }
 .my-picture {
     position:absolute;
@@ -250,10 +273,11 @@ main{
 .personal-data{
     word-wrap:wrap break-word;
     margin:0;
+    font-size:var(--font-size-personal-data);
 }
 .my-personal-data {
     margin: 0 0 0 9%;
-    font-size:16px;
+    font-size:var(--font-size-my-personal-data);
     color: #df9f50;
     word-wrap:wrap break-word;
     padding:0;
@@ -262,10 +286,11 @@ main{
     display:flex;
     justify-content: center;
     word-wrap:break-word;
-    max-width:35%;
+    max-width:var(--max-width-my-description);
     line-height: 2;
     text-align: justify;
     padding:0;
+    font-size: var(--font-size-my-description-p);
 }
 .my-description-p{
     padding:0;
@@ -281,7 +306,6 @@ main{
     margin:2%;
 }
 .hiperlink-technogies {
-    max-width:var(--max-width-hiperlink-technogies);
      box-shadow:10px 10px 10px 10px  #634f47;
      background-color:#df9f50;
      padding: 1%;
@@ -289,12 +313,13 @@ main{
      flex-direction: column;
      text-align: center;
      flex-grow:1;
-     margin: 1vw; 
+     margin: 1%; 
 }
 .languages-inscription{
     color: black;
     font-size: 30px;
     margin: 1%;
+    font-size: var(--font-size-language-inscription);
 }
 .languages-list {
     display: flex;
@@ -307,7 +332,7 @@ main{
     color:#092e20;
     margin: 5px 25px 0 25px;
 }
-.hiper-techno:hover {
+.hiperlink-technogies:hover {
     transform: scale(1.1);
     background-color: white;
     color: white;
@@ -315,12 +340,13 @@ main{
 .language-name{
     color: black;
     margin: 0;
+    font-size: var(--font-size-language-name);
 }
 
 .django-icon-box{
     border:solid #092e20;
     background-color: #092e20;
-    min-height: 130px;
+    min-height: 110px;
 }
 .django-icon{
     background-image: url(pictures/django_logo.svg);
@@ -366,7 +392,7 @@ main{
     z-index: 0;
     /* color: red; */
     width: 100%;
-    height: 15%;
+    height: var(--height-blur-bar-on-video);
     bottom:0;
     margin: 0;
     background: rgba(0, 0, 0, 0.9);
@@ -385,10 +411,11 @@ main{
 }
 .portfolio-section-video-header{
     z-index: 1;
-    height: 10%;
+    height: 35px;
     color:white;
     /* border: solid white; */
     margin: 0;
+    font-size: var(--font-size-portfolio-section-video-header);
    
 }
 .scheduling-alghoritm-image-box {
@@ -417,14 +444,14 @@ main{
 }
 .fourth-header-contact-section{
     margin:0 0 1% 0;
-    font-size: 20px;
+    font-size: var(--font-size-fourth-header-contact-section);
     color:white;
     text-shadow: 2px 2px 3px black;
     letter-spacing: 2px
    
 }
 .label-contact-section{
-    margin:  0 0 2vh 0;
+    margin:  0 0 4% 0;
     /* border:solid red; */
     
 }
@@ -433,23 +460,27 @@ main{
     border-radius: 8px;
     width: var(--width-input-contact-section);
     margin: 0.3% 0 0 0;
-    height: 35px;
+    height:var(--height-input-contact-section);
     box-shadow:10px 10px 10px 1px black;
 }
 .message-box-textarea{
     position: relative;
-    height: 200px;
+    height: var(--height-message-box-textarea);
     /* background-color: black; */
     color: white;
     width: 100%;
 }
+.message-box-textarea::placeholder {
+    padding: 175px 0 0 0;
+}
 .submit-button{
+    /* padding: 2%; */
     background-color: white;
     min-width: var(--min-width-submit-button);
     max-width: 15%;
     color: black;
     align-self:flex-end;
-    font-size:18px;
+    font-size:var(--font-size-submit-button);
     letter-spacing: 1.5px;
 }
 .submit-button:hover{
@@ -463,19 +494,17 @@ main{
     display: flex;
 }
 
-.message-box-textarea::placeholder{
-    padding: 175px 0 0 0;
-}
+
 input[type="text"] {
-    font-size: 20px;
+    font-size: var(--font-size-inside-input);
     padding:0 2% 0 2%;
     color: black;
 }
 textarea[type="text"]{
     position: relative;
-    font-size: 20px;
+    font-size: var(--font-size-inside-textarea);
     color:black;
-    padding:2%;
+    padding:var(--padding-inside-textarea);
     font-family: 'Ubuntu',
     sans-serif;
 }
@@ -491,13 +520,150 @@ textarea[type="text"]{
   ::-ms-input-placeholder { /* Microsoft Edge */
     color: black;
   }
+ 
+
+  @media only screen and (max-width:1000px) and (min-width: 600px) {
+   :root{
+        --min-height-header-back-image:510px;
+        --font-size-first-header:100px;
+        --font-size-secon-header:80px;
+        --font-size-third-header:40px;
+        --font-size-what-i-can-section-header_third:50px;
+        --width-elements-section-check-what-i-can:90%;
+        --min-width-button-contack-skills:220px;
+        --padding-button-contack-skills:3%;
+        --font-size-button-contack-skills:35px;
+        --min-height-my-picture-box:12%;
+        --max-width-my-picture-box:100%;
+        --max-width-my-description:90%;
+        --font-size-my-personal-data:48px;
+        --font-size-personal-data:58px;
+        --font-size-my-description-p:45px;
+        --font-size-language-name:40px;
+        --font-size-language-inscription:55px;
+        --width-grid-template-columns:repeat(auto-fill, 700px);
+        --width-message-form:95%;
+        --height-blur-bar-on-video:20%;
+        --font-size-portfolio-section-video-header:30px;
+        --font-size-fourth-header-contact-section:42px;
+        --height-input-contact-section:55px;
+        --height-message-box-textarea:280px;
+        --width-input-contact-section:60%;
+        --font-size-inside-input:40px;
+        --font-size-inside-textarea:40px;
+        --padding-inside-textarea:1% 1% 1% 2%;
+        --font-size-submit-button:45px;
+        --min-width-submit-button:30%;
+   } 
+ 
+   .section{
+       margin: 2% 0 0 0;
+       padding: 3%;
+   }
+   .think-outside-image {
+       top:70%;
+       left:5%;
+       width: 15vw;
+       height: 20vw;
+       z-index:-1;
+   }
+    .self-intro {
+         left:22.5%;
+         top:10%;
+         font-size:35px;
+    }
+    .second-header-box{
+        margin: 7% 0 3% 0;
+    }
+    .second-header {
+         font-size:50px;
+        }
+    .button-contack-skills {
+        border-radius:20px;
+    }
+    .third-header{
+        margin: 0 1% 5% 0;
+        font-size: 65px;
+
+    }
+    .section-header{
+        text-align: center;
+        padding: 1%;
+    }
+    .box-elements-info-about-me{
+        margin: 0 0 3% 0;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .my-picture-box{
+        min-height: 320px;
+    }
+    .my-picture{
+        left:32%;
+        top:5%;
+        min-width: 300px;
+        min-height: 300px;
+    }
+    .personal-data-box{
+        display: flex;
+        width: 80%;
+    }
+    .personal-data-element-box{
+        min-width: 90%;
+        margin: 2%;
+        padding: 0;
+    }
+    .personal-data{
+        margin: 1% 0 0 0;
+    }
+   .my-description{
+     text-align: justify;
+   }
+   .hiperlink-technogies{
+       /* border:solid red 10px; */
+       max-width: 90%;
+       margin: 2% 10% ;
+   }
+   .all-technologies-list{
+       align-items: center;
+       justify-content: center;
+   }
+   .language-icon{
+       margin: 5% 55px;
+   }
+   .video-header-box{
+       margin: 0 0 3.5% 0;
+   }
+   .portfolio-section-video-header{
+       padding: 35;
+       height: 35px;
+   }
+   .scheduling-alghoritm-image-box{
+       min-height: 400px;
+   }
+   .message-box-textarea::placeholder {
+       padding: 225px 0 0 0;
+   }
+   .submit-button {
+       border-radius: 18px;
+       height: 90px;
+  
+}
+
+
+
 
 @media screen and (min-width:1550px){
     :root{
-        --main-width:80%;
+        --main-width:85%;
+        --width-grid-template-columns:repeat(auto-fill, 580px);
     }
 }
-@media screen and  (max-width:1440px) and (min-width:1024px){
+
+
+
+/* @media screen and  (max-width:1440px) and (min-width:1024px){
     :root{
         --width-message-form:50%;
         --max-width-hiperlink-technogies:40%;
@@ -535,8 +701,8 @@ textarea[type="text"]{
 @media screen and (max-width:768px) and (min-width:320px){
     .framework-hiperlink {
         max-width:50%;
-        border:solid white;
+        border:solid red;
      }    
-}
+} */
 
 
