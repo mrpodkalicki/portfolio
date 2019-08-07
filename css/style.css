@@ -15,27 +15,22 @@ body{
     .think-outside-image{
         max-width:13vw;
         max-height: 11vw;
-        border: #092e20 solid;
+        
 
     }
 }
 .main-box{
     width: 100%;
-    /* margin: 0; */
-    /* border: #092e20 solid; */
 }
-ul {
+.ul{
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
 }
-a {
+.a{
     text-decoration: none;
 }
 .main-navigation{
-    /* font-family: 'Ubuntu',sans-serif; */
-    /* font-family: 'Kanit',sans-serif; */
-    /* font-family: 'Amaranth',sans-serif; */
     position: sticky;
     top: 0;
     z-index: 5;
@@ -68,7 +63,7 @@ a {
     width: 100%;
     flex-direction: column;
     margin: 0;
-    /* border: red solid; */
+
 }
 .header-back-image{
     position: relative;
@@ -94,7 +89,6 @@ a {
 }
 .self-intro{
     text-align: center;
-    /* margin:1% 0 1% 0; */
     padding: 0;
     position: absolute;
     left:14.5vw;
@@ -150,7 +144,6 @@ main{
 }
 .section{
     margin:0 0 1vw 0;
-    /* border:yellow solid; */
 }
 
 .third-header{
@@ -164,32 +157,25 @@ main{
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    /* border: #092e20 solid; */
     align-content: center;
     padding: 0;
-    /* border: solid red; */
-    
 }
-
 .what-i-can-section-header_third{
     font-size: 25px;
     color: black;
     text-align: center;
     margin:0 0 1.5vh 0;
-
 }
 .section-header-check-what-i-can{
     margin: 0;
     margin: 0;
     max-width:55%;
 }
-
 .what-i-can-article-section{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     max-width:55%;
-
 }
 .button-contack-skills{
     color:black;
@@ -203,14 +189,12 @@ main{
 }
 .button-contack-skills:hover {
     color: white;
-    background-color: rgba(0,0,0,0.1)
+    background-color: black;
 }
 .section-about-me{
     background-color: #323232;
     color:white;
-    
 }
-
 .article-section-about-me {
     padding: 1%;
     margin: 0;
@@ -411,10 +395,9 @@ width: 100%;
     margin: 0.3% 0 0 0;
     height: 35px;
     box-shadow:10px 10px 10px 1px black;
-    
-    
 }
 .message-box-textarea{
+    position: relative;
     height: 200px;
     /* background-color: black; */
     color: white;
@@ -432,15 +415,37 @@ width: 100%;
     color:white;
 
 }
+.message-label{
+    position: relative;
+    /* border:solid red; */
+    display: flex;
+}
+
+.message-box-textarea::placeholder{
+    padding: 175px 0 0 0;
+}
 input[type="text"] {
     font-size: 20px;
     padding:0 2% 0 2%;
     color: black;
 }
 textarea[type="text"]{
+    position: relative;
     font-size: 20px;
     color:black;
     padding:2%;
     font-family: 'Ubuntu',
     sans-serif;
 }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 0.7; 
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
+  }
